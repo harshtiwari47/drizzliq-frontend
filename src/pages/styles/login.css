@@ -1,0 +1,290 @@
+.authPage .pageTitle strong {
+  color: white;
+  font-size: 1.75em;
+}
+
+.authPage .pageTitle {
+  padding: 1em 0;
+}
+
+.authPage .pageTitle strong::after {
+  content: "";
+}
+
+.authPage {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(black, rgb(22, 25, 39));
+  grid-gap: 2em;
+}
+
+.authPage .errorMSG {
+  color: var(--color-text-inverse);
+  border-bottom: 1.5px solid var(--color-danger);
+  padding: 0.5em 1em;
+  box-sizing: border-box;
+  border-radius: 0.5em;
+  background: transparent;
+  position: relative;
+  margin-bottom: .5em;
+}
+
+.authPage .errorMSG::before {
+  content: "⚠";
+  position: absolute;
+  color: var(--color-danger);
+  width: 100%;
+  height: 100%;
+  left: -0.75em;
+}
+
+.msgBar {
+  color: #ebedf6;
+  padding: 2em 0 1em 0;
+  display: flex;
+  text-align: start;
+}
+
+.msgBar p {
+  width: 100%;
+  font-size: 1.05em;
+}
+
+.leftCard {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.rightCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftCard img {
+  width: calc(100% - 4em);
+  object-fit: cover;
+  height: calc(100% - 4em);
+  margin: 2em;
+  box-sizing: border-box;
+  border-radius: 2em;
+  animation: imgAnimation 2s infinite alternate;
+  filter: grayscale(0.8);
+}
+
+.leftCard::after {
+  content: "DRIZZLIQ";
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
+  width: calc(100% - 4em);
+  height: 20%;
+  color: #ebedf6;
+  font-size: 2rem;
+  z-index: 1;
+  background: rgba(59, 59, 67, 0.447);
+  box-sizing: border-box;
+  border-radius: 1em;
+  backdrop-filter: blur(5px);
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  box-shadow: 1px 10px 18px rgba(154, 154, 237, 0.507);
+  animation: logoAnimation 2s infinite alternate;
+}
+
+.authPage form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4em;
+  max-width: 480px;
+}
+
+form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1em;
+  border: 1px solid var(--color-border-dark);
+  border-radius: 1em;
+  margin: 0.15em 1em;
+  font-size: 0.95em;
+}
+
+form input[type="submit"]:hover {
+  color: var(--color-primary-light);
+  background: transparent;
+  border: 2px solid var(--color-primary-light);
+}
+
+form input[type="submit"] {
+  background: var(--color-primary-light);
+  color: var(--color-surface);
+  font-weight: 900;
+  letter-spacing: 1px;
+  transition: background 0.5s;
+}
+
+form input.inputError {
+   border-bottom: .175em solid var(--color-danger);
+}
+
+.registerBtnBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1em 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.frgtPass {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: right;
+  color: antiquewhite;
+  padding: 1em 0;
+  text-decoration: none;
+}
+
+.passInfo {
+  width: 100%;
+  box-sizing: border-box;
+  color: antiquewhite;
+  padding: 1em 0;
+  text-decoration: none;
+  font-size: 0.95em;
+}
+
+.registerBtnBar {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.registerBtnBar p {
+  color: aliceblue;
+  flex-grow: 1;
+}
+
+.registerBtnBar .tC {
+  display: flex;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.registerBtnBar input[type="checkbox"] {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.registerBtnBar .tC a {
+  color: #ebedf6;
+  height: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.registerBtnBar a {
+  color: rgb(213, 237, 247);
+  font-weight: 900;
+  font-size: 1.15em;
+}
+
+.authPage a:hover {
+  transform: scale(1.01);
+}
+
+@keyframes logoAnimation {
+  from {
+    box-shadow: -10px 10px 24px rgba(71, 71, 101, 0.507);
+  }
+  to {
+    box-shadow: 28px -10px 48px rgba(84, 84, 103, 0.556);
+  }
+}
+
+@keyframes imgAnimation {
+  from {
+    filter: grayscale(0.8);
+  }
+  to {
+    filter: grayscale(0.3);
+  }
+}
+
+@media only screen and (max-width: 748px) {
+  .authPage {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    align-items: start;
+    height: max-content;
+    gap: 0;
+    min-height: 100vh;
+  }
+
+  .leftCard {
+    height: 150px;
+  }
+
+  .leftCard img {
+    width: calc(100% - 1em);
+    height: calc(100% - 1em);
+    margin: 0.5em;
+  }
+  .leftCard::after {
+    bottom: 2em;
+    left: 2em;
+    width: calc(100% - 4em);
+    height: 30%;
+    font-size: 1.75em;
+    border-radius: 0.25em;
+  }
+  .authPage form {
+    padding: 1em;
+  }
+  .authPage .pageTitle strong {
+    font-size: 1.35em;
+  }
+  .registerBtnBar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 748px) and (max-width: 1440px) {
+  .authPage .passInfo {
+    font-size: calc(min(1.5vw, 0.9em));
+  }
+
+  .authPage .pageTitle {
+    padding: calc(min(1.5vw, 0.7em)) 0;
+  }
+
+  .authPage .errorMSG {
+    font-size: calc(min(1.7vw, 0.9em));
+  }
+}
+
+@media (min-width: 748px) and (max-width: 1080px) {
+  .authPage {
+  display: grid;
+  grid-template-columns: 1.25fr 2fr;
+  }
+  .leftCard::after {
+    font-size: calc(min(3vw, 1.5em));
+  }
+}

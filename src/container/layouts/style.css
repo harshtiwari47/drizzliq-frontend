@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+#pageLayout1 {
+  background: linear-gradient(rgb(243, 245, 248), rgb(218, 218, 247));
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#pageLayout1 #main {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  background: var(--color-surface-alt);
+}
+
+#pageLayout1 #main .page {
+  padding: 1.5em;
+}
+
+@media only screen and (max-width: 720px) {
+  #pageLayout1 #main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: rgb(222, 226, 244);
+    position: relative;
+  }
+
+  #pageLayout1 #main nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60%;
+    background: #e0ebf6e9;
+    backdrop-filter: blur(2px);
+  }
+}

@@ -1,0 +1,73 @@
+header {
+  width: 100%;
+  height: max(4em, min(60px));
+  background: var(--color-surface);
+  display: flex;
+  padding: 1em 1.5em;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--color-border);
+}
+
+header h1 {
+  flex-grow: 1;
+  font-size: 1.5rem;
+  color: var(--color-text-primary);
+}
+
+header ul {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+  margin-left: 1em;
+}
+
+header ul .icon {
+  color: var(--color-text-primary);
+  width: 25px;
+  height: 25px;
+  margin: 0 1em;
+  transition: all 0.35s;
+}
+
+header ul .icon:hover {
+  color: var(--color-link-hover);
+  width: 28px;
+  height: 28px;
+}
+
+header #sidebarMenuBtn {
+  display: none;
+}
+
+header .sidebarMenuBtnClose {
+  position: fixed;
+  left: 58%;
+  top: 4em;
+  z-index: var(--z-modal);
+  background: var(--color-surface);
+  border-radius: 0 100% 100% 0;
+  padding: .5em;
+  border: 2px solid var(--color-border);
+  box-shadow: 0 0 10px var(--shadow-sm);
+}
+
+@media only screen and (max-width: 748px) {
+  header ul .icon {
+    width: 1.25em;
+    height: 1.25em;
+    margin: 0 0.3em;
+  }
+
+  header ul .icon:hover {
+    width: 1.3em;
+    height: 1.3em;
+  }
+
+  header #sidebarMenuBtn {
+    display: block;
+  }
+}

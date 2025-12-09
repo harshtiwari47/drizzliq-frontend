@@ -1,0 +1,29 @@
+.settingsMenu ul li {
+    box-sizing: border-box;    
+    width: 100%;
+    background: var(--color-surface);
+    padding: 1em 2em;
+    margin: 1em 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    border-radius: .5em;
+}
+.settingsMenu ul li p {
+    flex-grow: 1;
+    font-size: 1.15em;
+    color: var( --color-text-primary);
+}
+.settingsMenu ul .icon {
+    width: 1.5em;
+    height: 1.5em;
+    color: var( --color-text-primary);
+}
+.settingsMenu .themeColor {
+    border-radius: 100%;
+    width: 1.5em;
+    height: 1.5em;
+    background: white;
+    border: 2px solid var(--color-border);
+}

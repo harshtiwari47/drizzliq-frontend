@@ -1,0 +1,127 @@
+:root {
+  /* 1. BRAND COLORS                    */
+
+  --color-primary: #444cf0;
+  --color-primary-light: #676ffe;
+  --color-primary-dark: #363cb9;
+
+  --color-secondary: #62667f;
+  --color-secondary-light: #8387a7;
+  --color-secondary-dark: #47495b;
+
+  --color-accent: #1056b9;
+  --color-accent-light: #166ce5;
+  --color-accent-dark: #0d3d7f;
+
+  /* 2. SURFACE & BACKGROUND            */
+
+  --color-bg: #f2f5fb;            /* main background */
+  --color-bg-alt: #e5e8ee;        /* light gray background */
+  --color-surface: #f0f2fd;       /* cards, panels */
+  --color-surface-alt: #e3e5f8;   /* secondary surfaces */
+
+  --color-overlay: rgba(0, 0, 0, 0.05);
+  --color-backdrop: rgba(0, 0, 0, 0.4);
+
+  /* 3. TEXT COLORS                     */
+
+  --color-text: #111111;           /* primary text */
+  --color-text-primary: #1c1c1d;           /* primary text */
+  --color-text-secondary: #46464a; /* body text */
+  --color-text-muted: #65656a;     /* dim text */
+  --color-text-inverse: #ffffff;   /* on primary bg */
+
+  --color-heading: #101010;
+  --color-link: #2563eb;
+  --color-link-hover: #1e40af;
+
+  /* 4. BORDERS & DIVIDERS              */
+
+  --color-border: #d3dbe6;
+  --color-border-dark: #666a70;
+  --color-divider: #e8e8e8;
+
+  /* 5. SEMANTIC COLORS                 */
+
+  /* Success */
+  --color-success: #16a34a;
+  --color-success-light: #86efac;
+  --color-success-bg: #dcfce7;
+
+  /* Warning */
+  --color-warning: #f59e0b;
+  --color-warning-light: #fde68a;
+  --color-warning-bg: #fef3c7;
+
+  /* Error */
+  --color-danger: #dc2626;
+  --color-danger-light: #fca5a5;
+  --color-danger-bg: #fee2e2;
+
+  /* Info */
+  --color-info: #0284c7;
+  --color-info-light: #7dd3fc;
+  --color-info-bg: #e0f2fe;
+
+  /* 6. SHADOWS                         */
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+  /* 7. RADIUS                          */
+ 
+  --radius-xs: 3px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 999px;
+
+  /* 8. SPACING (scale)                 */
+ 
+  --space-xxs: 2px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 24px;
+  --space-2xl: 32px;
+  --space-3xl: 48px;
+
+  /* 9. TYPOGRAPHY                      */
+
+  --font-family-sans: "Inter", "Roboto", sans-serif;
+  --font-family-mono: "Fira Code", monospace;
+
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 30px;
+
+  /* Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Line heights */
+  --line-height-normal: 1.5;
+  --line-height-heading: 1.4;
+
+  /* 10. TRANSITIONS                    */
+ 
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* 11. Z-INDEX LEVELS                 */
+ 
+  --z-base: 1;
+  --z-dropdown: 1000;
+  --z-modal: 2000;
+  --z-toast: 3000;
+}
